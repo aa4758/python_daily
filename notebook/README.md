@@ -1,3 +1,5 @@
+# 자료 총 정리 중
+
 # 주피터 노트북
 - Anaconda prompt -> jupyter-notebooke 입력
 
@@ -97,6 +99,32 @@ for i in range(CCC, DDD):
 # 모듈 라이브러리
 importA: A를 가져오기
 from A import B
+
+# 리스트
+
+### 요소 추가
+- list.append(A): 리스트 안에 A를 추가(하나의 요소(index)만 추가 가능)
+- list.extend(A): 리스트 안에 A를 넣어 확장
+- list.insert(A,B): 특정 인덱스(A)에 요소(B)를 추가
+
+### 요소 삭제
+- list.pop(A): 리스트의 마지막 요소 혹은 해당 index(A) 값을 삭제
+- list.remove(A): 리스트에서 리스트값 A를 삭제 
+- list.clear(): 리스트의 모든 요소 삭제
+
+### 특정 값의 인덱스 구하기
+- list.index(A): 리스트에서 리스트값 A의 index값 출력
+
+### 특정 값의 갯수 구하기
+- list.count(A): 리스트에서 리스트값 A의 갯수 구하기
+
+### 리스트의 순서 뒤집기
+- list.reverse(): 리스트값의 순서를 뒤집어서 뒤에서부터 출력
+
+### 리스트의 요소 정리
+- list.sort(): 리스트값을 작은 수부터 차례대로 변경하여 정렬
+- list.sort(reverse=True): 리스트값을 큰 수부터 차례대로 변경하여 정렬
+- list.sorted(): 리스트값을 작은 수부터 차레대로 생성하여 정렬
 
 # 튜플과 리스트의 차이
 리스트와 달리 튜플은 추가 및 변경 불가
