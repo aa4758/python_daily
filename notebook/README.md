@@ -126,3 +126,32 @@ C라이브러리에서 OS를 통해 하드웨어의 파일을 열었을 때 쓰�
 `file.readlines()`: 모든 파일을 읽기
 - `file.seek`,`file.tell`을 통해 파일 위치를 탐색/이동 가능
 - `with open('AAA','B',C) as file:`을 통해 close()할 필요 없이 사용 가능
+
+# 내장함수
+
+### math 모듈
+- `math.floor()`: 소수점 이하를 절삭
+- `math.ceil()`: 무조건 올림
+- `math.factorial()`: 팩토리알 값을 구함
+- `math.sin()`: 사인 값을 구함(Radian)
+- `math.cos()`: 코사인 값을 구함(Radian)
+- `math.tan()`: 탄젠트 값을 구함(Radian)
+- `math.pow()`: 거듭제곱 값을 구함
+- `math.log10()`: 밑이 10인 로그 값을 구함
+- `math.pi`: 파이값(3.141592...)
+
+### datetime 모듈
+```python
+datetime.strftime()
+```
+- `%Y`: 네 자리 연도
+- `%y`: 두 자리 연도
+- `%m`: 월
+- `%d`: 일
+- `%A`: 요일(Monday, Tuesday...)
+- `%a`: 생략 요일(Mon, Tues...)
+- `%H`: 시(24기준)
+- `%I`: 시(12기준)
+- `%p`: AM 또는 PM
+- `%M`: 분
+- `%S`: 초
