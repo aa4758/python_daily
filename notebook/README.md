@@ -107,7 +107,9 @@ for i in range(CCC, DDD):
 
 # 모듈 라이브러리
 importA: A를 가져오기
-`from A import B`
+```py
+from A import B
+```
 
 # 리스트
 
@@ -135,12 +137,39 @@ importA: A를 가져오기
 - `list.sort(reverse=True)`: 리스트값을 큰 수부터 차례대로 변경하여 정렬
 - `list.sorted()`: 리스트값을 작은 수부터 차레대로 생성하여 정렬
 
-# 튜플과 리스트의 차이
+# 튜플
+`A = (B, C, D)`
+
+### 튜플 매소드
+- `t.count(A)`
+- `t.index(A)`
+- `t.append(A)`
+
+### 튜플과 리스트의 차이
 리스트와 달리 튜플은 추가 및 변경 불가
 
 # 딕셔너리
 키(key)와 값(value)으로 구성
 `A = {AAA: BBB, CCC: DDD}`
+- A[AAA] -> BBB 출력
+- `A.keys()`: A의 key값만 모아서 출력
+- `A.values()`: A의 value 값만 모아서 출력
+- `A.items()`: A의 key값과 value값을 튜플로 모아서 출력
+- `A.get(Key)`: A의 Key값에 해당하는 Value 값 출력   
+- `enumerate(A)`: A의 인덱스 값을 추출
+
+# 함수
+```py
+def func():
+    # to do
+func()
+```
+### 매개변수
+`func(A)`에서 A의 값을 임의로 주어 함수를 통해 특정 값을 도출함
+
+#### *arge 매개변수
+`func(*A)`*를 통해 매개변수 갯수를 지정하는게 아닌 자유롭게 여러 값을 줄 수 있음
+`return A` 함수에서 어느 값을 넣었을 때 A의 값을 돌려주는 역할
 
 # 지역변수와 전역변수
 지역변수: 함수 안에서 선언된 변수
@@ -163,6 +192,19 @@ C라이브러리에서 OS를 통해 하드웨어의 파일을 열었을 때 쓰�
 `file.readlines()`: 모든 파일을 읽기
 - `file.seek`,`file.tell`을 통해 파일 위치를 탐색/이동 가능
 - `with open('AAA','B',C) as file:`을 통해 close()할 필요 없이 사용 가능
+
+# 외장함수
+```py
+from A import B
+```
+
+### random 예제
+- `randint(A, B)`: A부터 B 사이의 임의의 정수를 무작위로 리턴
+- `random()`: 0부터 1 사이의 부동소수점(float) 숫자를 무작위로 리턴
+- `uniform(A, B)`: A부터 B 사이의 임의의 소수(float)를 무작위로 리턴
+- `randrange(A, B, C)`: A부터 B 사이의 정수 중 C 간격의 숫자를 무작위로 리턴
+
+
 
 # 내장함수
 
