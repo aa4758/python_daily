@@ -234,3 +234,18 @@ datetime.strftime()
 - `%p`: AM 또는 PM
 - `%M`: 분
 - `%S`: 초
+
+
+# 커널(kernel)
+
+### 커널 install
+pip install ipykernel==version
+ipykernel install --user --name [virtualEnv] --display-name "[displayKenrelName]"
+### 커널 삭제
+jupyter kernelspec uninstall py27
+
+# 객체, 값, 형
+
+### 객체
+- 파이썬의 데이터를 객체로 추상화
+- 모든 객체는 아이덴티티(주소), 값, 형을 가진다
