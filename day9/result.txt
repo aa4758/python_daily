@@ -1,1 +1,0 @@
-html = 202293, text = 54745, word = 1579 nospace = 5747
